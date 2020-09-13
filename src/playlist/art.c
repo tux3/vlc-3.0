@@ -64,7 +64,7 @@ static char* ArtCacheGetDirPath( const char *psz_arturl, const char *psz_artist,
     char *psz_dir;
     char *psz_cachedir = config_GetUserDir(VLC_CACHE_DIR);
 
-    if( !EMPTY_STR(psz_artist) && !EMPTY_STR(psz_album) )
+    if( !EMPTY_STR(psz_artist) && !EMPTY_STR(psz_album) && false ) // Album tracks can have different covert art...
     {
         char *psz_album_sanitized = strdup( psz_album );
         filename_sanitize( psz_album_sanitized );
